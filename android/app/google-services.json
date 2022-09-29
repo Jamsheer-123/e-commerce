@@ -1,0 +1,90 @@
+{
+  "project_info": {
+    "project_number": "149991281969",
+    "project_id": "e-kart-a11a0",
+    "storage_bucket": "e-kart-a11a0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:149991281969:android:a247583d9aa17cdf9a4c10",
+        "android_client_info": {
+          "package_name": "com.jamshi.e_cart_shopping"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "149991281969-ge0tpsu6hm7171u4hivau5mvqvfoeq0q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAwPm6MuSZ4kjzxgDoDvTqGHpfwLc8zztU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "149991281969-ge0tpsu6hm7171u4hivau5mvqvfoeq0q.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "149991281969-2uj1v5ndftli2e9dv9kilep60grpokna.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "jamshi.com.eKart"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:149991281969:android:9de6085ca00e22f69a4c10",
+        "android_client_info": {
+          "package_name": "jamshi.com.e_kart"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "149991281969-aia7oa6rfrb64pcaqv709vo3ln9qfkoo.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "jamshi.com.e_kart",
+            "certificate_hash": "a7c3ec8c593b7c4e73024743fe709016848576f6"
+          }
+        },
+        {
+          "client_id": "149991281969-ge0tpsu6hm7171u4hivau5mvqvfoeq0q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAwPm6MuSZ4kjzxgDoDvTqGHpfwLc8zztU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "149991281969-ge0tpsu6hm7171u4hivau5mvqvfoeq0q.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "149991281969-2uj1v5ndftli2e9dv9kilep60grpokna.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "jamshi.com.eKart"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

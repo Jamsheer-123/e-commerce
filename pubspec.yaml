@@ -1,0 +1,38 @@
+name: e_cart_shopping
+version: 1.0.0+1
+publish_to: none
+description: A new Flutter project.
+environment:
+  sdk: '>=2.17.3 <3.0.0'
+
+dependencies:
+  carousel_slider: ^4.1.1
+  cloud_firestore: ^3.4.5
+  cupertino_icons: ^1.0.2
+  dots_indicator: ^2.1.0
+  firebase_auth: ^3.6.4
+  firebase_database: ^9.1.5
+  firebase_storage: ^10.3.7
+  flutter:
+    sdk: flutter
+  flutter_slidable: ^2.0.0
+  flutter_staggered_grid_view: ^0.4.0
+  flutter_svg: ^1.1.4
+  get: 4.6.5
+  image_picker: ^0.8.5+3
+  razorpay_flutter: ^1.3.2
+  result_type: ^0.1.0
+  shared_preferences: ^2.0.15
+
+dev_dependencies:
+  flutter_lints: ^2.0.0
+  flutter_test:
+    sdk: flutter
+  lints: 2.0.0
+
+flutter:
+  assets:
+    - assets/images/
+    - assets/svg/
+    - assets/svgicon/
+  uses-material-design: true

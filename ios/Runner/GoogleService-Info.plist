@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>149991281969-4bj9p51fi90g891squelmm3q5ilvka80.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.149991281969-4bj9p51fi90g891squelmm3q5ilvka80</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>149991281969-aia7oa6rfrb64pcaqv709vo3ln9qfkoo.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBJStJDD92pZQ5YJSLm9CqHqIkmFr3s1bM</string>
+	<key>GCM_SENDER_ID</key>
+	<string>149991281969</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.jamshi.eCartShopping</string>
+	<key>PROJECT_ID</key>
+	<string>e-kart-a11a0</string>
+	<key>STORAGE_BUCKET</key>
+	<string>e-kart-a11a0.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:149991281969:ios:53dd42428f6f11d49a4c10</string>
+</dict>
+</plist>
