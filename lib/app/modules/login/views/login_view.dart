@@ -29,7 +29,7 @@ class LoginView extends GetView<LoginController> {
                 icon: Icons.key,
                 keybord: TextInputType.visiblePassword,
                 controls: controller.password),
-            LoginButton(),
+            LoginButton(onss: controller.onSubmit),
             Center(child: CreateAccountText())
           ],
         ),

@@ -54,3 +54,13 @@ class Cart {
         qty: json["qty"]);
   }
 }
+
+class Wishlist {
+  Wishlist({required this.wishlist, required this.id});
+  final bool wishlist;
+  String id;
+  factory Wishlist.getModelFromJson({required Map<String, dynamic> json}) {
+    return Wishlist(wishlist: json["whishlist"], id: json["id"]);
+  }
+  Map<String, dynamic> toJson() => {"id": id, "wishlist": wishlist};
+}

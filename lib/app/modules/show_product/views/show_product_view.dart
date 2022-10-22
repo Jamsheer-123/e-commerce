@@ -24,22 +24,39 @@ class ShowProductView extends GetView<ShowProductController> {
                 .where("category", isEqualTo: controller.type)
                 .snapshots(),
             builder: (context, snapshots) {
-              return (snapshots.connectionState == ConnectionState.waiting)
-                  ? Center(
-                      child: CircularProgressIndicator(),
-                    )
-                  : GridView.builder(
-                      semanticChildCount: 1,
-                      gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                          mainAxisExtent: 250, crossAxisCount: 2),
-                      shrinkWrap: true,
-                      itemCount: snapshots.data!.docs.length,
-                      itemBuilder: (context, index) {
-                        var data = snapshots.data!.docs[index].data()
-                            as Map<String, dynamic>;
+              if (!snapshots.hasData) {
+                return Center(
+                  child: CircularProgressIndicator(),
+                );
+              }
+              if (snapshots.data!.docs.isEmpty) {
+                return Center(child: Text("no items"));
+              } else {
+                GridView.builder(
+                    semanticChildCount: 1,
+                    gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                        mainAxisExtent: 250, crossAxisCount: 2),
+                    shrinkWrap: true,
+                    itemCount: snapshots.data!.docs.length,
+                    itemBuilder: (context, index) {
+                      var data = snapshots.data!.docs[index].data()
+                          as Map<String, dynamic>;
 
-                        return ProductTile(data: data);
-                      });
+                      return ProductTile(data: data);
+                    });
+              }
+              return GridView.builder(
+                  semanticChildCount: 1,
+                  gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                      mainAxisExtent: 250, crossAxisCount: 2),
+                  shrinkWrap: true,
+                  itemCount: snapshots.data!.docs.length,
+                  itemBuilder: (context, index) {
+                    var data = snapshots.data!.docs[index].data()
+                        as Map<String, dynamic>;
+
+                    return ProductTile(data: data);
+                  });
             },
           )),
     );

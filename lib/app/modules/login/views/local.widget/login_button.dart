@@ -4,8 +4,8 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 class LoginButton extends GetView<LoginController> {
-  LoginButton({Key? key}) : super(key: key);
-
+  LoginButton({Key? key, required this.onss}) : super(key: key);
+  void Function() onss;
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -18,8 +18,7 @@ class LoginButton extends GetView<LoginController> {
                 ),
               )
             : TextButton(
-                onPressed:
-                    controller.isLoading.value ? null : controller.onSubmit,
+                onPressed: controller.isLoading.value ? null : onss,
                 style: AppConstants.buttonStyle,
                 child: Padding(
                   padding:

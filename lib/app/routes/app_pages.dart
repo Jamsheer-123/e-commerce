@@ -18,7 +18,6 @@ import 'package:e_cart_shopping/app/modules/my_account/bindings/my_account_bindi
 import 'package:e_cart_shopping/app/modules/my_account/views/my_account_view.dart';
 import 'package:e_cart_shopping/app/modules/order_summery/bindings/order_summery_binding.dart';
 import 'package:e_cart_shopping/app/modules/order_summery/views/order_summery_view.dart';
-
 import 'package:e_cart_shopping/app/modules/profile/bindings/profile_binding.dart';
 import 'package:e_cart_shopping/app/modules/profile/views/profile_view.dart';
 import 'package:e_cart_shopping/app/modules/search/bindings/search_binding.dart';
@@ -29,6 +28,8 @@ import 'package:e_cart_shopping/app/modules/sinup/bindings/sinup_binding.dart';
 import 'package:e_cart_shopping/app/modules/sinup/views/sinup_view.dart';
 import 'package:e_cart_shopping/app/modules/splash/bindings/splash_binding.dart';
 import 'package:e_cart_shopping/app/modules/splash/views/splash_view.dart';
+import 'package:e_cart_shopping/app/modules/wishlist/bindings/wishlist_binding.dart';
+import 'package:e_cart_shopping/app/modules/wishlist/views/wishlist_view.dart';
 
 part 'app_routes.dart';
 
@@ -107,6 +108,11 @@ class AppPages {
       name: _Paths.SHOW_PRODUCT,
       page: () => ShowProductView(),
       binding: ShowProductBinding(),
+    ),
+    GetPage(
+      name: _Paths.WISHLIST,
+      page: () => WishlistView(),
+      binding: WishlistBinding(),
     ),
   ];
 }

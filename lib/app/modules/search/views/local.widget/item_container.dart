@@ -5,9 +5,10 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 class ItemContainer extends GetView<CartController> {
-  const ItemContainer({
+  ItemContainer({
     Key? key,
     required this.data,
+    // required model,
   }) : super(key: key);
 
   final Map<String, dynamic> data;

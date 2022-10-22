@@ -28,11 +28,12 @@ class DetailedPageView extends GetView<DetailedPageController> {
         if (snapshot.connectionState == ConnectionState.done) {
           Map<String, dynamic> data =
               snapshot.data!.data() as Map<String, dynamic>;
+          controller.isSelected.value = data["wishlist"];
           return Scaffold(
             // backgroundColor: Color(0xFFF5F6F9),
             backgroundColor: AppColors.white,
             appBar: PreferredSize(
-              child: CustomAppBar(),
+              child: CustomAppBar(data: data),
               preferredSize: Size.fromHeight(70),
             ),
             body: SingleChildScrollView(

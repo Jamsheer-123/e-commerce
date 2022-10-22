@@ -1,6 +1,8 @@
+import 'package:e_cart_shopping/app/data/firebase/addtocart/add-to_cart.dart';
 import 'package:e_cart_shopping/app/infastructure/utils/index.dart';
 import 'package:e_cart_shopping/app/modules/home/views/home_view.dart';
 import 'package:e_cart_shopping/app/modules/profile/views/profile_view.dart';
+import 'package:e_cart_shopping/app/modules/wishlist/views/wishlist_view.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import '../controllers/dash_controller.dart';
@@ -53,17 +55,17 @@ class DashView extends GetView<DashController> {
                 label: 'Account',
                 backgroundColor: AppColors.blue3,
               ),
-              // BottomNavigationBarItem(
-              //   icon: Container(
-              //     margin: EdgeInsets.only(bottom: 7),
-              //     child: Icon(
-              //       Icons.shopping_cart,
-              //       size: 20.0,
-              //     ),
-              //   ),
-              //   label: 'Cart',
-              //   backgroundColor: AppColors.blue3,
-              // ),
+              BottomNavigationBarItem(
+                icon: Container(
+                  margin: EdgeInsets.only(bottom: 7),
+                  child: Icon(
+                    Icons.favorite,
+                    size: 20.0,
+                  ),
+                ),
+                label: 'Wishlist',
+                backgroundColor: AppColors.blue3,
+              ),
               // BottomNavigationBarItem(
               //   icon: Container(
               //     margin: EdgeInsets.only(bottom: 7),
@@ -87,10 +89,7 @@ class DashView extends GetView<DashController> {
       bottomNavigationBar: buildBottomNavigationMenu(context, controller),
       body: Obx(() => IndexedStack(
             index: controller.tabIndex.value,
-            children: [
-              HomeView(),
-              ProfileView(),
-            ],
+            children: [HomeView(), ProfileView(), WishlistView()],
           )),
     ));
   }

@@ -4,8 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 class SubmitButton extends GetView<SinupController> {
-  const SubmitButton({Key? key}) : super(key: key);
-
+  SubmitButton({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return Container(
